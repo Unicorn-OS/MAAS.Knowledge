@@ -1,0 +1,10 @@
+network:
+  version: 2
+  ethernets:
+    # NAT interface - for internet
+    enp7s0:
+      dhcp4: true
+    # Macvtap - for MAAS DHCP
+    enp1s0:
+      addresses:
+        - 10.0.0.2/24
